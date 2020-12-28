@@ -1,4 +1,3 @@
-import time
 from tkinter import *
 import tkinter as tk
 
@@ -6,12 +5,10 @@ root = tk.Tk()
 root.attributes("-fullscreen",True)
 
 def check_key():
-    if str(entry.get()) == "hello":
+    if str(entry.get()) == "hellisabove":
         exit()
     else:
         label.configure(text = "Wrong code inserted")
-        time.sleep(2)
-        label.configure(text = "Please enter code")
 
 def donothing():
     print("Close Function Disabled")
